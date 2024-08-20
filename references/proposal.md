@@ -2,10 +2,9 @@
 
 Brian purpose of proj
 
-proj 1 trying to teach amethodogy to argu a point.
+Proj 1 trying to teach amethodogy to argue a point.
 
-The workflow for proj 2 is the focus
-
+The workflow for proj 2 is the focus.
 The thing that we care about is the process. Extarct, load, transform, visualize, communicate insights. 
 
 ---
@@ -60,7 +59,7 @@ One hot encoding of tags.
 Task order | Story beat | Assigned to
 ---|---|---
 1| Presentation introduction Tell them what we are going to present (short) | Ryan MadO
-2| why do our investors care about twitch data (and revenue, but that's obv) | Ryan MadO
+2| why do our investors care about Twitch data (and revenue, but that's obv) | Ryan MadO
 3| how we measure these, what are we measuring| Nate MadB
 4| what is our data, what features did we engineer | Nate MadB
 5| interactable bar chart, revenue by tags | Nate MadB
