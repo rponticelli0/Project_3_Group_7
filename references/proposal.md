@@ -56,20 +56,66 @@ One hot encoding of tags.
 
 
 ## Presentation Outline
+
+which tags yield the highest engagement measured by viewership and positivity
+Gamers be Gamin' Consulting is examining twitch vs review data. Correlation between genre tags and highest viewer engagement vs review standpoint.
+Is there a genre with a discrepancy between viewership and reviews?
+
 Task order | Story beat | Assigned to
 ---|---|---
 1| Presentation introduction Tell them what we are going to present (short) | Ryan MadO
-2| why do our investors care about Twitch data (and revenue, but that's obv) | Ryan MadO
+<<<<<<< HEAD
+2| why do our investors care about twitch data and reviews | Ryan MadO
 3| how we measure these, what are we measuring| Nate MadB
 4| what is our data, what features did we engineer | Nate MadB
-5| interactable bar chart, revenue by tags | Nate MadB
-6| bubble chart of revenue top... 30-50(?) tags |  Nate MadB
+5| interactable bar chart, num reviews, positivity by tags | Nate MadB
+6| bubble chart of positivity(color-saturation), review total(size) or  of top... 30-50(?) tags |  Nate MadB
 7| twitch data for engagement and product promotion | Ryan MadO
-8| twitch viewer count to review count correlation x=review_count y=twitch_count size=revenue | Ryan MadO
+8| twitch viewer count to review count correlation x=review_count y=viewer_count size=revenue | Ryan MadO
 9| twitch viewer count by tag/genre. interactible, select from top 30-50(?) tags |  Ryan MadO
 10| conclusion - reiterate insights | MadB? Nate
 ---
-## Action items from Aug15
+# Minutes and action items
+---
+
+## 08/19/24
+### Minutes
+How to merge twitch data(game-yearly) into single row aggregate steam data.
+Drop revenue. compare review total and positivity to twitch, not rev
+make a dashboard type github pages webapp with our 4? graphs and a tag selection thingy
+
+EndGoal : webpage (github) with 3 tags + metric(twitch, review_total, positivity) selection. Displays a list of games (desc) of that metric. + 2-3 plots
+
+sum of total hours, sum hours streamed, avg streamers, avg viewers, avg channels.
+bubble and twitch summary stats 
+after join have at most 2k games. cut everything prior to date(2018?)
+line chart is 2018-2023 
+sums/avgs are 2018-2023
+list release date on game list on left
+
+Use flask to localhost a visualization
+
+### Action Items
+Add data sources for new twitch data
+make tags+steam sqlite db 
+Make api functions for selecting tags and querying db
+
+Person | Action Item | timeline
+---|---|---
+MadO| Make basic flask webpage up| Tuesday
+MadO| Make html tags for the plots and dropdowns etc | Tuesday
+Ryan| inner join steam and twitch summary statistics| Tuesday
+Nate| make and load sqlitedb of tag, steam+twitch, and twitch yearly dat|tuesday night
+Nate| build sqlalchemy/flask functions for bubble graph| Wed
+MadO| build sqlalchemy/flask functions for twitch summary stats| Wed
+Ryan| build sqlalchemy/flask functions for 2018-2023 twitch line graph| Wed
+Ryan| Edit presentation outline| before class Wed
+
+## 08/15/24
+### Minutes
+Presentation outline made
+
+### Action items
 Person | Action Item | timeline
 ---|---|---
 MadO| Find Twitch data| Fri
@@ -107,7 +153,8 @@ eg. Load clean data, make plots, save images
 	2. profitability by quarter released
 	3. interactive visual of tag selection/ordering
 	4. from prev selection, associate summary stats of twitch viewers
-5. Presentation
+5. build flask app and visualization dashboard using altair
+6. Presentation
 	1. storyline pitch
 	2. if cut and try we may have too much scope, narrow down to Q 1 and 4?
 	
@@ -117,7 +164,7 @@ eg. Load clean data, make plots, save images
 
 
 # Tools and Tech
-
+Character_normalizer
 
 # Data Sources:
 
@@ -125,9 +172,10 @@ Name| type| data| url
 ---|---|---|---
 Steam Trends 2023 by @evlko and @Sadari|65000|release date, tags, review number, review avg, title, game id, launch price|[Steam Trends 2023](https://docs.google.com/spreadsheets/d/1D5MErWbFJ2Gsde9QxJ_HNMltKfF6fHCYdv4OQpXdnZ4/edit?gid=1714749788#gid=1714749788)
 IGDB|api|Lots of meta-info, no $$ info, use to determine if dlc|[IGDB](https://api-docs.igdb.com/#website)
-RAWG|api| Lots og meta-info, esp twitch related | [RAWG](https://api.rawg.io/docs/#operation/games_additions_list)
+RAWG|api| Lots og meta-info, esp twitch related (paid only) | [RAWG](https://api.rawg.io/docs/#operation/games_additions_list)
 
 ### data limitations
 No individual sales data
+Limited time frames of twitch data
 
 ---
