@@ -61,21 +61,29 @@ which tags yield the highest engagement measured by viewership and positivity
 Gamers be Gamin' Consulting is examining twitch vs review data. Correlation between genre tags and highest viewer engagement vs review standpoint.
 Is there a genre with a discrepancy between viewership and reviews?
 
-Task order | Story beat | Assigned to
+Task  | Story beat | Assigned to
 ---|---|---
-1| Presentation introduction Tell them what we are going to present (short) | Ryan MadO
-<<<<<<< HEAD
-2| why do our investors care about twitch data and reviews | Ryan MadO
-3| how we measure these, what are we measuring| Nate MadB
-4| what is our data, what features did we engineer | Nate MadB
-5| interactable bar chart, num reviews, positivity by tags | Nate MadB
-6| bubble chart of positivity(color-saturation), review total(size) or  of top... 30-50(?) tags |  Nate MadB
-7| twitch data for engagement and product promotion | Ryan MadO
-8| twitch viewer count to review count correlation x=review_count y=viewer_count size=revenue | Ryan MadO
-9| twitch viewer count by tag/genre. interactible, select from top 30-50(?) tags |  Ryan MadO
-10| conclusion - reiterate insights | MadB? Nate
+(data) and (scope), and (reason) | introduction | Ryan MadO
+(care beacuse?) | why do our investors care about twitch data and reviews | Ryan MadO
+(metrics?)| how we measure these, what are we measuring| Nate MadB
+(Define features we engineered)| what is our data, what features did we engineer | Nate MadB
+bar chart, twitch aggregate stats for selected game| gives specific game overview | Nate MadB
+bubble chart of games for top 30 of selected tags with positivity(color-saturation), review total(size) | Gives bredth of market |  Nate MadB
+monthly twitch data for engagement and product promotion | indicates game longevity | Ryan MadO
+twitch viewer count to review count correlation x=review_count y=viewer_count size=revenue | ??? | Ryan MadO
+twitch viewer count by tag/genre. interactible, select from top 30-50(?) tags | ??? |  Ryan MadO
+(What did we learn?)| conclusion | MadB? Nate
 ---
 # Minutes and action items
+---
+## 08/21/24
+### Minutes
+Revisit presentation table
+
+### Action Items
+Person | Action Item | timeline
+---|---|---
+
 ---
 
 ## 08/19/24
@@ -110,6 +118,8 @@ Nate| build sqlalchemy/flask functions for bubble graph| Wed
 MadO| build sqlalchemy/flask functions for twitch summary stats| Wed
 Ryan| build sqlalchemy/flask functions for 2018-2023 twitch line graph| Wed
 Ryan| Edit presentation outline| before class Wed
+
+---
 
 ## 08/15/24
 ### Minutes
