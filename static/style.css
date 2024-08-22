@@ -1,0 +1,9 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(134, 150, 150);
+    font-family: 'Helvetica, Helvetica Neue, Calibri, 'Trebuchet MS', sans-serif;
+}
