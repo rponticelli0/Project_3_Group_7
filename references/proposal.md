@@ -61,28 +61,122 @@ which tags yield the highest engagement measured by viewership and positivity
 Gamers be Gamin' Consulting is examining twitch vs review data. Correlation between genre tags and highest viewer engagement vs review standpoint.
 Is there a genre with a discrepancy between viewership and reviews?
 
+Target: What tags can we present as "the bestest"
+Metrics for "the bestest": 
+* review positivity (satisfaction)
+* highest twitch average viewers? (player retention proxy)
+* percentile breakdown of...
+* sythecize a single numeric metric from 1-2
+	* review positive * 0.5 + twitch_viewership * 0.5 normalized to max 1
+* bad pr in videogames can do so much. Helldivers 2 example
+
+We have:
+
+Aggregate review and twitch data
+
+monthly top 200 twitch data
+
+USE AVG_HOURS_STREAM**ED** not viewership
+* provides the clearest relationship
+
+### New presentation (needs to be rebuilt again)
 Task  | Story beat | Assigned to
 ---|---|---
-(data) and (scope), and (reason) | introduction | Ryan MadO
-(care beacuse?) | why do our investors care about twitch data and reviews | Ryan MadO
-(metrics?)| how we measure these, what are we measuring| Nate MadB
-(Define features we engineered)| what is our data, what features did we engineer | Nate MadB
-bar chart, twitch aggregate stats for selected game| gives specific game overview | Nate MadB
-bubble chart of games for top 30 of selected tags with positivity(color-saturation), review total(size) | Gives bredth of market |  Nate MadB
-monthly twitch data for engagement and product promotion | indicates game longevity | Ryan MadO
-twitch viewer count to review count correlation x=review_count y=viewer_count size=revenue | ??? | Ryan MadO
-twitch viewer count by tag/genre. interactible, select from top 30-50(?) tags | ??? |  Ryan MadO
-(What did we learn?)| conclusion | MadB? Nate
+Steam is a online games store like yelp. Twitch is a platform to watch folks live stream games with commentary and interaction| Set the stage of what steam and twitch are | Nate MadB
+Case study on hell divers | huge positive release, mismanagement to rapid obscurity | MadO
+Case study on hunt showdown| initial flop, adjusted target demographics and growth over years | Nate?
+2 vis. Top 10 games on twitch visualization. Tag freq table| which genre our game should be based on frequency table of tags|?
+"After data exploration we discovered xyz tags are most prolific in top 10 of hours_streamed" | **Transition to DEMO** |  Nate MadB
+describe bar chart and significance | describe avg_hours_streamed as primary metric w/ bar chart | Ryan MadO
+describe bubble chart bubblename=title, bubblesize=hours_streamed, bubblecolor=positivity. display all of top 30% viewership? popup?| shows competator games. Shows market saturation. number of competators | Ryan MadO
+top ten twitch viewership by month. only last x years. only displays top 5/10 from list| displays what we talked about in the case studies |  Ryan MadO
+Should invest in xyz genre if targetting highest longevity of game measured by twitch| conclusion | MadB? Nate
+Q&A?
+
+### steam pros
+* private company compared to others
+* ease of access is huge: buy, install, play. easy to navigate
+* discovery queue, caters to person and makes recs based off library, integrates live streams into rec'd games as well which is a great tool for developers
+* refund policies are good, marketplace is good, security like MFA is great
+* they were a games first company, they developed before turning into a marketplace
+
+### twitch pros
+* wide reach
+* dominance in live streaming
+* most streamers use steam as it is great for discovering, installing and 
+* playing games quickly
+* real-time engagement
+* community building
+
 ---
 # Minutes and action items
 ---
+## 08/22/24
+## Minutes
+rebuild presentation outline _again_
+## Action Items
+
+---
+
 ## 08/21/24
+
 ### Minutes
 Revisit presentation table
+
+Mayhaps do a case study on helldivers 2?
+
+Case study on 1 game. importance of twitch as an indicator for long term interest and sustained growth of audiance. 
+
+correlation with steam review data which may be more intuitive
+xyz tags  are best tags.
+
+2 case studies.
+
+Helldivers - huge positive release, mismanagement to rapid obscurity
+
+Hunt Showdown - initial flop, adjusted target demographics and grew over years
+
+bubble chart where you can select bubbles and it displays overlay bar chart of binned histo
+
+we can make a statement like: after some data exploration we decided xyz tags are most prolific in top 10-50-100 and we'd like to show our dashboard 
+
+### Elias:feedback
+
+Hooked with case studies Hunt vs Helldivers
+
+Pivotted away from those stories
+
+If we don't have the data on hunt and helldivers, tell the story, if we have time later, add it in. What do we have support for when they engaged on twich
+
+What maps to hunt to present an argument to hunt.
+
+These are the features that show us what should work. Helldivers should have these features, but failed.
+
+These metrics were really good at predicting things failed for helldivers.
+
+Bring in our data and predictions of what should be good. hypothesis trends in tags. hours streams and reviews. define a sucessful game.
+
+Case Study Hell Divers. They failed, but should have succeeded by our metrics.  
+Case Study Hunt showdown. Increase in focus on interactivity on twitch. 
+
+Focusing on fanbase and communication tha matters.
+
+If time. If look at new thing the model fits better.
+
+closing statement - how many of you looked up hunt showdown if more than hunt showdown that is why we believe community engagement matters a lot
 
 ### Action Items
 Person | Action Item | timeline
 ---|---|---
+MadB|Readme |?
+MadB|skeleton of presentation|?
+Ryan|look up when hunt showdown started to do twitch promotion. dev streams? identify spikiness. build a dataset.|class thurs
+Nate|look at tag similarity between helldivers and hunt|class thurs
+Nate|top 10 + helldivers and hunt hours_streamed vs review percentage|class thurs
+MadO| make brainstorm on what to say about relationship of reviews and hours_streamed to a sucessful product with longevity| class thurs
+
+
+
 
 ---
 
