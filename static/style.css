@@ -6,4 +6,19 @@ body {
     align-items: center;
     background-color: rgb(134, 150, 150);
     font-family: 'Helvetica, Helvetica Neue, Calibri, 'Trebuchet MS', sans-serif;
-}
+    }
+
+main {
+    display: flex;
+    width: 70%;
+    gap: 5px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    color: black;
+    }
+
+h1 {
+    font-size: 1.7rem;
+    padding: 15px;
+    }
