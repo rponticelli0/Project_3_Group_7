@@ -114,7 +114,96 @@ Q&A?
 ## 08/22/24
 ## Minutes
 rebuild presentation outline _again_
+
+Genre play a role in game success
+
+case studies - lawbreakers + hunt showdown
+* shared tags ['Multiplayer', 'FPS', 'Shooter', 'Difficult', 'Action']
+
+Use vesa-altair to make the plot
+
+Turn the plot into a def makeplot(df): return plot
+
+copy def makeplot: into flask
+
+#### Prezy
+This is the first 10 minutes of what would be a 60 minute presentation of marketing. Why do we care about twitch and what does the competator market look like for twitch community for our genre. 
+
+1-2 slides. Define Steam wrt online storefront w/ reviews. Game consulting company that is advising on how to grow a new game in the genre described by tags: ['Multiplayer', 'FPS', 'Shooter', 'Difficult', 'Action']
+
+1 slide - Define Twitch wrt youtube/live stream and how twitch relates to growth.
+
+1slide lawbreakers stats use online visualizations
+1slide didn't use twitch
+1slide hunt statsuse online visualizations
+1slide hunt visualization showing twitch and enagement points (if possible as a flask page with interactivity, if not with png on slide and arrows)
+
+Then explore our dashboard loaded with only the games that have 4+ tag match?
+
 ## Action Items
+Person | Action Item | timeline
+---|---|---
+MadO|Presentation skeleton|22nd
+MadO|flask framework|23rd
+Nate|bubble plot made w/ wrapper| 22nd
+Nate|top x bar chart hours streamed| 23rd
+Ryan|top 5 games hours streams per month line chart w/ wrapper| 22nd
+Ryan|make pretty the positivity to hours streamed regression line| 23rd
+All|meet tomorrow class time to finish flask work and get webpage up| 23rd
+
+#### NEW project reqs
+data vis eng and presentation is the same.
+Repo reqs is now in PDF.
+4 sections to presentation. equal weight for num 1-4
+1. ETL workflow
+	* Method to visualize the data pre and post treatment
+	* Comment notebooks with reasoning in markdown
+	* transformed data must not be exactly the same as the source
+2. Choose a database and justify why.
+	* eg working with xyz data so used postgres
+	* at least 2 tables and 100 records 
+3. Gnenerate visualizations
+	* min 3 visualizations.
+	* dataset powering vis must be at least 100 records
+	* must include at least 1 user interactable visualizations
+	* 1 additional js or python library **for visualzation purposes**
+	* explain the logic/decision making in why specific visualizations were chosen for the presentation.
+4. Create a compelling Presentation
+	* must include
+	* interactive visualizations, not intertactivity for the sake of interactivity
+	* show us the "wow factor"
+* Final deliverables
+	* concise readme
+	* final proposal draft (tune proposal with end product)
+	* slides + additional media (recordings) used in the presentaion
+	* documented jupyter notebook or scripts
+	* database schema file
+	* logically organized files within directories
+	* is used, code for flask aplication
+	
+#### What is being looked for in the presentation 
+1. Clear Objective and Purpose
+	1. Goal orientaed
+	2. Target audience
+2. Relevent and accurate data
+	1. relevant data
+	2. contextualization
+3. Effective visual design
+	1. Choosing the right chart type
+	2. simplicity 
+	3. consistency in aesthetic
+	4. accessible (optional)
+4. Storytelling with Data
+	1. Narrative Structure
+	2. Engagement
+	3. Annotations and explainations (optional)
+5. Interactivity
+	1. interactivy elements that contribute to the story
+6. Clear and Concise Communication 
+	1. Descriptive Titles and labels
+	2. Brevity in text
+	3. Avoid jargon
+computer crapped out missed the rest of the prez
 
 ---
 
