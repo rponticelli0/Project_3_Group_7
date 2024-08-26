@@ -11,7 +11,7 @@ We then look at 2 case studies of companies that did or did not use Twitch to ma
 1. LawBreakers did not use Twitch when they could, and perhaps should, have to generate and maintain interest in the game.
 2. Hunt: Showdown 1986 extensively used Twitch to build up and maintain interest in the game.
 
-To this end, we plotted an interactive timeline showing number of Twtich streams available to watch VS time, with and Hunt game and twtich events listed for 2019-2020, the period they saw the most growth.
+To this end, we plotted an interactive timeline showing number of Twitch streams available to watch VS time, with and Hunt game and twtich events listed for 2019-2020, the period they saw the most growth.
 
 We then have a second interactive visualization that can select top 10 games, + Hunt (a top 50 game). The left plot displays average hours streamed per year in the Twitch top 200, VS lifetime review rating. The right plot depicts the hours streamed per month timeseries. The games of interest are selectable from the legend.
 
@@ -23,11 +23,11 @@ We then have a second interactive visualization that can select top 10 games, + 
 ![Top 10 Twitch Comparison](https://github.com/rponticelli0/Project_3_Group_7/blob/main/images/top_10_interactive_example.png?raw=true)
 
 ## Sources
-![Twitch Tracker](https://twitchtracker.com/games/766571430)  
-![Steam Charts](https://steamcharts.com/app/553850#All)  
-![Kaggle - Top Games on Twitch 2016-2023](https://www.kaggle.com/datasets/rankirsh/evolution-of-top-games-on-twitch)  
-![Statista - US Game Sales](https://www.statista.com/statistics/201073/revenue-of-the-us-video-game-industry-by-segment/)  
-![Steam DB](https://steamdb.info/app/350280/)  
+[Twitch Tracker](https://twitchtracker.com/games/766571430)  
+[Steam Charts](https://steamcharts.com/app/553850#All)  
+[Kaggle - Top Games on Twitch 2016-2023](https://www.kaggle.com/datasets/rankirsh/evolution-of-top-games-on-twitch)  
+[Statista - US Game Sales](https://www.statista.com/statistics/201073/revenue-of-the-us-video-game-industry-by-segment/)  
+[Steam DB](https://steamdb.info/app/350280/)  
 
 These provide tons of data for both Twitch and Steam, and can be broken down into many categories (game, genre, release date, hours played, hours watched, etc.)
 
