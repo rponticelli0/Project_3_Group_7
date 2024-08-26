@@ -22,8 +22,4 @@ We then have a second interactive visualization that can select top 10 games, + 
 ### Top 10 Twitch Comparison
 ![Top 10 Twitch Comparison](https://github.com/rponticelli0/Project_3_Group_7/blob/main/images/top_10_interactive_example.png?raw=true)
 
-## Requirements
-
-## Setup and Usage
-
 ## Sources
