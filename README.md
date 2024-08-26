@@ -1,6 +1,6 @@
 # Gamers Be Gaming': Twtich Marketing
 
-## [Project Proposa](https://docs.google.com/document/d/1Jw2xJ-hdylPN_xQOLGgnnI2S3JybaXel6lJ4SFmZMuU/edit)
+## [Project Proposal](https://docs.google.com/document/d/1Jw2xJ-hdylPN_xQOLGgnnI2S3JybaXel6lJ4SFmZMuU/edit)
 
 ## Description
 In this Gamers be Gamin' Consulting session, we examine a pair of case studies on Twitch interaction.
