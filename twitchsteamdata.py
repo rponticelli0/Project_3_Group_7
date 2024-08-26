@@ -1,33 +1,30 @@
 from flask import Flask, request, jsonify, render_template
 import sqlite3
 from pathlib import Path
+import pandas as pd
 
-twitchsteamdata = Flask(__name__)
+# Initialize Flask app with the correct template folder
+twitchsteamdata = Flask(__name__, template_folder='templates')
 
+# Define the route for the home page
 @twitchsteamdata.route('/')
 def home():
     return render_template('index.html')
 
-@twitchsteamdata.route('/search')
-def search():
-    # Get the search term from the URL
-    search_term = request.args.get('search_term')
+# Define the route to get data
+@twitchsteamdata.route('/data')
+def get_data():
+    df = load_data()
+    data = df[['twitch_monthly', 'steam_twitch_agg', 'tags']].to_dict(orient='records')
+    return jsonify(data)
 
-    # Connect to the database
-    conn = sqlite3.connect(Path(''))
-    c = conn.cursor()
-
-    # Generate and run search query, need to create script.js to handle the search
-
-    # Close the database connection
+def load_data():
+    conn = sqlite3.connect('Project_3_Group_7/resources/data.sqlite')
+    df = pd.read_sql_query("SELECT * FROM merged_table", conn)
+    df = df.dropna(subset=['steam_twitch_agg', 'tags', 'twitch_monthly'])
     conn.close()
+    return df
 
-    # Return the results as JSON
-    return jsonify(results)
-
-
-
-
-
+# Main driver
 if __name__ == "__main__":
-    app.run(debug=True)
+    twitchsteamdata.run(debug=True)
