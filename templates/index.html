@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="/static/style.css">
     <!-- Import the Vega-Embed library -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
@@ -10,16 +11,17 @@
     <title>Altair Visualization of Twitch and Steam Data</title>
 </head>
 <body>
+    <center>
     <!-- Header -->
     <h1>Altair Visualization of Twitch and Steam Data</h1>
-    <center>
+    <!-- Body and Links -->
     <a href="http://127.0.0.1:5000/hunt_stream_analysis">Hunt Stream Analysis</a>
     <br><br>
     <a href="http://127.1.4.1:5000/top_10_interactive">Top 10 Interactive</a>
     </center>
     <!-- Container for the Altair chart -->
     <div id="vis"></div>
-    
+
     <script>
         // Parse the Altair JSON chart data passed from Flask
         var chartData = {{ chart|safe }};
