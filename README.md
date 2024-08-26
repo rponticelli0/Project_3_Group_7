@@ -17,10 +17,11 @@ We then have a second interactive visualization that can select top 10 games, + 
 
 ## Visualization examples
 ### Hunt Event Timeseries
-[Hunt Event Timeseries](https://github.com/rponticelli0/Project_3_Group_7/blob/main/images/Hunt_steam_analysis_example.png?raw=true)
+![Hunt Event Timeseries](https://github.com/rponticelli0/Project_3_Group_7/blob/main/images/Hunt_steam_analysis_example.png?raw=true)
 
 ### Top 10 Twitch Comparison
-[Top 10 Twitch Comparison](https://github.com/rponticelli0/Project_3_Group_7/blob/main/images/top_10_interactive_example.png?raw=true)
+![Top 10 Twitch Comparison](https://github.com/rponticelli0/Project_3_Group_7/blob/main/images/top_10_interactive_example.png?raw=true)
+
 ## Requirements
 
 ## Setup and Usage
