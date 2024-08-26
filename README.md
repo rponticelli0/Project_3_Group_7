@@ -23,11 +23,11 @@ We then have a second interactive visualization that can select top 10 games, + 
 ![Top 10 Twitch Comparison](https://github.com/rponticelli0/Project_3_Group_7/blob/main/images/top_10_interactive_example.png?raw=true)
 
 ## Sources
-![Twitch Tracker](https://twitchtracker.com/games/766571430)
-![Steam Charts](https://steamcharts.com/app/553850#All)
-![Kaggle - Top Games on Twitch 2016-2023](https://www.kaggle.com/datasets/rankirsh/evolution-of-top-games-on-twitch)
-![Statista - US Game Sales](https://www.statista.com/statistics/201073/revenue-of-the-us-video-game-industry-by-segment/)
-![Steam DB](https://steamdb.info/app/350280/)
+![Twitch Tracker](https://twitchtracker.com/games/766571430)  
+![Steam Charts](https://steamcharts.com/app/553850#All)  
+![Kaggle - Top Games on Twitch 2016-2023](https://www.kaggle.com/datasets/rankirsh/evolution-of-top-games-on-twitch)  
+![Statista - US Game Sales](https://www.statista.com/statistics/201073/revenue-of-the-us-video-game-industry-by-segment/)  
+![Steam DB](https://steamdb.info/app/350280/)  
 
 These provide tons of data for both Twitch and Steam, and can be broken down into many categories (game, genre, release date, hours played, hours watched, etc.)
 
