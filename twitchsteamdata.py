@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template
-import sqlite3
 from pathlib import Path
 import pandas as pd
+import altair as alt
 
 # Initialize Flask app with the correct template folder
 twitchsteamdata = Flask(__name__, template_folder='templates')
@@ -11,20 +11,27 @@ twitchsteamdata = Flask(__name__, template_folder='templates')
 def home():
     return render_template('index.html')
 
-# Define the route to get data
-@twitchsteamdata.route('/data')
-def get_data():
+    # Convert the Altair chart to a JSON format
+    chart_json = chart.to_json()
+
+    return render_template('index.html', chart=chart_json)
+
+# Define the route to get the Altair chart
+@twitchsteamdata.route('/chart')
+def get_chart():
     df = load_data()
-    data = df[['twitch_monthly', 'steam_twitch_agg', 'tags']].to_dict(orient='records')
-    return jsonify(data)
+    chart = create_chart(df)
+    return chart.to_json()
 
-def load_data():
-    conn = sqlite3.connect('Project_3_Group_7/resources/data.sqlite')
-    df = pd.read_sql_query("SELECT * FROM merged_table", conn)
-    df = df.dropna(subset=['steam_twitch_agg', 'tags', 'twitch_monthly'])
-    conn.close()
-    return df
+# Route to serve hunt_stream_analysis.html
+@twitchsteamdata.route('/hunt_stream_analysis')
+def serve_hunt_stream_analysis():
+    return render_template('hunt_stream_analysis.html')
 
-# Main driver
-if __name__ == "__main__":
+# Route to serve top_10_interactive.html
+@twitchsteamdata.route('/top_10_interactive')
+def serve_top_10_interactive():
+    return render_template('top_10_interactive.html')
+
+if __name__ == '__main__':
     twitchsteamdata.run(debug=True)
