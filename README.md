@@ -26,7 +26,7 @@ We then have a second interactive visualization that can select top 10 games, + 
 [Twitch Tracker](https://twitchtracker.com/)  
 [Steam Charts](https://steamcharts.com/)   
 [Statista - US Game Sales](https://www.statista.com/statistics/201073/revenue-of-the-us-video-game-industry-by-segment/)  
-[Kaggle - Top Games on Twitch 2016-2023](https://www.kaggle.com/datasets/rankirsh/evolution-of-top-games-on-twitch)* 
+[Kaggle - Top Games on Twitch 2016-2023](https://www.kaggle.com/datasets/rankirsh/evolution-of-top-games-on-twitch)*  
 [Steam DB](https://steamdb.info/app/350280/)*  
 _the last 2 asterisked links are what we used for our data; however, the other sites helped us lead to our final story and are great resources for anyone curious to track this information yourself._
 
