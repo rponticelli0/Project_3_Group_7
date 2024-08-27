@@ -28,7 +28,7 @@ We then have a second interactive visualization that can select top 10 games, + 
 [Statista - US Game Sales](https://www.statista.com/statistics/201073/revenue-of-the-us-video-game-industry-by-segment/)  
 [Kaggle - Top Games on Twitch 2016-2023](https://www.kaggle.com/datasets/rankirsh/evolution-of-top-games-on-twitch)*  
 [Steam DB](https://steamdb.info/app/350280/)*  
-`* indicates datasets used frot his project. The other datasets helped us lead to our final story and are great resources for similar projects.
+\* indicates datasets used frot his project. The other datasets helped us lead to our final story and are great resources for similar projects.
 
 These provide tons of data for both Twitch and Steam, and can be broken down into many categories (game, genre, release date, hours played, hours watched, etc.)
 
